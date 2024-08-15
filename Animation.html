@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: bisque;
+        background-color: navy;
+        font-family: Algerian;
+    }
+    .container{
+        background-color: seagreen;
+        display: flex;
+        border: 2px solid black;
+        border-radius: 20px;
+        height: 500px;
+        padding: 20px;
+        margin: auto;
+        position: relative;
+    }
+    .yeah{
+        background-color: aliceblue;
+        border: 2px solid black;
+        width: 255px;
+        height: 200px;
+        position: absolute;
+        animation-name: dark;
+        animation-duration: 8s;
+        animation-iteration-count: 3;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        }
+
+    @keyframes dark{
+        0%{
+                top: 20px; /* adjusted to start from the top padding */
+                left: 20px; /* adjusted to start from the left padding */
+            }
+            25%{
+                top: calc(100% - 220px); /* adjusted to move to the bottom, considering the image height */
+                left: 20px;
+            }
+            50%{
+                top: calc(100% - 220px);
+                left: calc(100% - 275px); /* adjusted to move to the right, considering the image width */
+            }
+            75%{
+                top: 20px;
+                left: calc(100% - 275px);
+            }
+            100%{
+                top: 20px;
+                left: 20px;
+
+    }
+</style>
+<body>
+    <h1><i>..::CSS Animations::..</i></h1>
+    <div class="container">
+        <img class="yeah" src="sky.jpg.jpg" alt="image">
+    </div>
+
+</body>
+</html>

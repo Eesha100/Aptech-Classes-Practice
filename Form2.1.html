@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url(formbg.png);
+        background-size: cover;
+        font-family: Poppins, sans-serif
+
+    }
+    .login-form{
+        background-color: transparent;
+        width: 350px;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        border: 2px solid rgb(146, 140, 140);
+       
+    }
+    form{
+        width: 350px;
+    }
+    h1{
+        text-align: center;
+        padding-top: 16px;
+    }
+    .input-box{
+        /* width: 100%; */
+        background-color: transparent;
+        padding: 8px 0;
+        margin: 12px 0;
+    }
+    .input-box input{
+        width: 248px;
+        /* height: inherit; */
+        /* padding: 8px 0 ; */
+        /* border-radius: 100px; */
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        width: 348px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .input-box label{
+        padding-left: 8px;
+    }
+    .remember-forgot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 20px; */
+        font-size: 14px;
+    }
+
+    .remember-forgot a{
+        text-decoration: none;
+        color: black;
+        margin-right: 5px;
+    }
+    .remember-forgot a:hover{
+        text-decoration: underline
+    }
+    .register{
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+    }
+    .register a{
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+    .register a:hover{
+        text-decoration: underline
+    }
+    ion-icon{
+        position: relative;
+        left: 320px;
+        bottom: 28px;
+    }
+    button{
+        margin-top: 15px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 40px;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        background-color: rgb(110, 169, 173);
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+    button:active{
+        opacity: 0.6;
+    }
+
+    input:focus~label 
+    input:valid~label
+    {
+        top: 30px;
+    }
+</style>
+<body>
+    <div class="login-form">
+        <form>
+            <h1>LOGIN</h1>
+            <div class="input-box">
+                <label>Username</label><br>
+                <input type="text" required>
+                <ion-icon name="person"></ion-icon>
+            </div>
+            <div class="input-box">
+                <label>Password</label><br>
+                <input type="password" required>
+                <ion-icon name="lock-closed"></ion-icon>
+            </div>
+            <div class="remember-forgot">
+             <label><input type="checkbox"> Remember me </label>
+             <a href="#">Forgot password?</a>
+            </div>
+            <button>Login</button>
+            <div class="register">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

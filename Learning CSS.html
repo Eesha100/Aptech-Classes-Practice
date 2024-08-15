@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+    h1{
+        padding: 30px;
+        text-align: center;
+        font-size: 50px;
+    }
+    *{
+        padding: 0px;
+        margin: 0px;
+        background: teal;
+    }
+    .grid{
+        width: 700px;
+        height: 500px;
+        margin: auto;
+        display: grid;
+        border: 5px double black;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .grid div{
+        padding: 30px;
+        margin: 10px ;
+        font-size: 40px;
+        background-color: beige;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <h1>..::Learning CSS::..</h1>
+    <div class="grid">
+       <div>1</div>
+       <div>2</div>
+       <div>3</div>
+       <div>4</div>
+       <div>5</div>
+       <div>6</div>
+    </div>
+    
+</body>
+</html>

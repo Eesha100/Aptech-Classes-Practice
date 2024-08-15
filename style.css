@@ -1,0 +1,37 @@
+body{
+    margin: 0%;
+    background-color: black;
+    color: white;
+}
+h1{
+    text-align: center;
+    color: teal;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.navbar ul{
+    list-style: none;
+    background-color: rgb(65, 146, 221) ;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 17px;
+    border-bottom: 1px solid black;
+    transition: backgroun-color 0.15s;
+}
+.navbar a:hover{
+    background-color: rgb(28, 81, 131);
+    cursor: pointer;
+}
+.navbar a:active{
+    background-color: rgb(28, 81, 131);
+}
+.navbar li{
+    /* float: left; */
+}

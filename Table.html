@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..::Tables in HTML::..</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    table, th, tr, td, tf{
+        border: 1px solid rgb(100, 98, 98);
+        text-align: center; 
+        /* border-right: 2px solid black; */
+        }
+        table{
+            border: 2px solid grey;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+</style>
+<body>
+    <h1>--- HTML Structure ---</h1>
+    <hr style="color: black;">
+    <table style="margin: 0 auto; ">
+        <thead>
+            <tr>
+                <th colspan="6">Header</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Side 1</td>
+                <td colspan="3">Content 1</td>
+                <td rowspan="4">Side 2</td>
+            </tr>
+            <tr>
+                <td>Img</td>
+                <td>Img</td>
+                <td>Img</td>
+            </tr>
+            <tr>
+                <td colspan="2">Content 2</td>
+                <td>Content 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Content 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" style="text-align: center;"><b>Footer</b></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

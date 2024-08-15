@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-image: url(wood-bg.png); */
+        background-color: rgb(136, 49, 107);
+    }
+
+    .navbar {
+        background-color: rgb(123, 123, 128);
+        position: fixed;
+        width: 100%;
+    }
+
+    .navcontent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 13px;
+        padding-top: 10px;
+
+    }
+
+    .navlist li {
+        list-style: none;
+        display: inline;
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+
+    .navlist a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px;
+        margin-right: 5px;
+
+
+    }
+
+    a:hover {
+        background-color: rgb(136, 49, 107);
+        color: white;
+        border-radius: 18px;
+
+    }
+
+    a:active {
+        opacity: 0.8;
+        color: black;
+    }
+
+    .logo {
+        width: 80px;
+        height: 50px;
+        margin-left: 10px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px black;
+    }
+
+    .search-box input {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 16px;
+    }
+
+    .align {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    ion-icon {
+        color: black;
+        margin-right: 4px;
+        margin-top: 4px;
+        font-size: 19px;
+        padding: auto;
+    }
+
+    .main {
+        height: 1000px;
+        /* background-color: teal; */
+    }
+    footer{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div class="navcontent">
+            <img src="sapphire-logo.png" class="logo" alt="image">
+            <div class="align">
+                <ul class="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="main">
+
+        </div>
+    </main>
+    <footer>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, expedita est repellat, asperiores officia
+        dolore atque commodi doloremque minima vero suscipit nemo dolor enim labore fugiat aspernatur, reprehenderit
+        odio maiores.
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
